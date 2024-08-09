@@ -11,37 +11,40 @@ struct ItemRowView: View {
     var image: String
     var itemName: String
     var price: String
+    @State private var scale = 1.0
+    @Namespace private var animation
     
     var body: some View {
         HStack {
             Image(image)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 64, height: 64)
-                .padding(.trailing, 2)
-            VStack(alignment: .leading, spacing: 0) {
+                .frame(width: 96, height: 96)
+                .clipShape(RoundedRectangle(cornerRadius: 4.0))
+                .matchedGeometryEffect(id: "ImageScaling", in: animation)
+            VStack(alignment: .leading) {
                 Text(itemName)
                     .font(Font.system(size: 20.0, weight: .semibold, design: .default))
-                    .padding(.bottom, 4)
                 Text(price)
                     .font(.body)
                     .foregroundColor(.gray)
-                    .padding(.bottom, 8)
+                    .padding(.bottom, 4)
                 Button("ADD TO CART") {
                     print("Button pressed!")
                     // showingCredits.toggle()
                 }
-                .padding(.horizontal, 16)
-                .padding(.vertical, 12)
+                .padding(.horizontal, 13)
+                .padding(.vertical, 8)
                 .fontWeight(.bold)
-                .font(.footnote)
+                .font(Font.system(size: 9.0, weight: .bold, design: .rounded))
                 .background(Color.mint)
                 .clipShape(Capsule())
                 .foregroundColor(.black)
             }
+            .padding(.leading, 4)
 
         }
-        .frame(maxHeight: 128)
+        .frame(maxHeight: 196)
     }
 }
 

@@ -26,7 +26,10 @@ struct ItemList: View {
                 }
             }
             .listStyle(InsetGroupedListStyle())
-            .navigationTitle("Products")
+            .navigationTitle("Robots")
+            .refreshable {
+                print("Refreshing...")
+            }
         }
         .safeAreaInset(edge: .top, spacing: 0) {
             Color.clear.frame(height: 16)

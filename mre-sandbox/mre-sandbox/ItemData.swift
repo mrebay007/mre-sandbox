@@ -30,7 +30,7 @@ enum Destination: String, CaseIterable {
         case .product5:
             ProductView5()
         case .product6:
-            ProductView6()
+            ExampleFromHWS()
         }
     }
 }
