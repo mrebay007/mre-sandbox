@@ -14,10 +14,10 @@ struct ItemRowView: View {
     
     var body: some View {
         HStack {
-            Image(systemName: "seal.fill")
-                .font(.title2)
-                .foregroundColor(.orange)
-                .frame(minWidth: 32, minHeight: 16)
+            Image(image)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 64, height: 64)
                 .padding(.trailing, 2)
             VStack(alignment: .leading, spacing: 0) {
                 Text(itemName)
@@ -29,10 +29,22 @@ struct ItemRowView: View {
                 Text(image)
                     .font(.footnote)
                     .foregroundColor(.gray)
-                
+                    .padding(.vertical, 4)
+                Button("ADD TO CART") {
+                    print("Button pressed!")
+                    // showingCredits.toggle()
+                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
+                .fontWeight(.bold)
+                .font(.footnote)
+                .background(Color.mint)
+                .clipShape(Capsule())
+                .foregroundColor(.black)
             }
+
         }
-        .frame(minHeight: 60)
+        .frame(maxHeight: 128)
     }
 }
 

@@ -11,7 +11,7 @@ struct ItemList: View {
     var itemContent: [Item]
     
     var body: some View {
-        VStack {
+        Section {
             List {
                 ForEach(itemContent) { row in
                     NavigationLink(
@@ -25,6 +25,11 @@ struct ItemList: View {
                         .listRowInsets(.init(top: 16, leading: 16, bottom: 16, trailing: 16))
                 }
             }
+            .listStyle(InsetGroupedListStyle())
+            .navigationTitle("Products")
+        }
+        .safeAreaInset(edge: .top, spacing: 0) {
+            Color.clear.frame(height: 16)
         }
     }
 }

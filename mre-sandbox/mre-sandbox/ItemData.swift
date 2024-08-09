@@ -38,37 +38,37 @@ enum Destination: String, CaseIterable {
 struct ItemData {
     static var itemContent = [
         Item(
-            image: "Image-01",
+            image: "Robot-1",
             itemName: "Product 1",
             price: "$19.99",
             destination: .product1
         ),
         Item(
-            image: "Image-02",
+            image: "Robot-2",
             itemName: "Product 2",
             price: "$39.99",
             destination: .product2
         ),
         Item(
-            image: "Image-03",
+            image: "Robot-3",
             itemName: "Product 3",
             price: "$29.99",
             destination: .product3
         ),
         Item(
-            image: "Image-04",
+            image: "Robot-4",
             itemName: "Product 4",
             price: "$19.99",
             destination: .product4
         ),
         Item(
-            image: "Image-05",
+            image: "Robot-5",
             itemName: "Product 5",
             price: "$39.99",
             destination: .product5
         ),
         Item(
-            image: "Image-06",
+            image: "Robot-6",
             itemName: "Product 6",
             price: "$29.99",
             destination: .product6

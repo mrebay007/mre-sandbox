@@ -16,7 +16,7 @@ struct mre_sandboxApp: App {
             NavigationSplitView {
                 ItemList(itemContent: ItemData.itemContent)
             } detail: {
-                Text("Choose an example")
+                Text("Choose a robot")
             }
         }
     }
