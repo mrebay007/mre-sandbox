@@ -26,10 +26,7 @@ struct ItemRowView: View {
                 Text(price)
                     .font(.body)
                     .foregroundColor(.gray)
-                Text(image)
-                    .font(.footnote)
-                    .foregroundColor(.gray)
-                    .padding(.vertical, 4)
+                    .padding(.bottom, 8)
                 Button("ADD TO CART") {
                     print("Button pressed!")
                     // showingCredits.toggle()

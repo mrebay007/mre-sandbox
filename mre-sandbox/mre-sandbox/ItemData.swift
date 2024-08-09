@@ -39,38 +39,38 @@ struct ItemData {
     static var itemContent = [
         Item(
             image: "Robot-1",
-            itemName: "Product 1",
-            price: "$19.99",
+            itemName: "Mr. Roboto",
+            price: "$199.99",
             destination: .product1
         ),
         Item(
             image: "Robot-2",
-            itemName: "Product 2",
-            price: "$39.99",
+            itemName: "Jonny Five",
+            price: "$399.99",
             destination: .product2
         ),
         Item(
             image: "Robot-3",
-            itemName: "Product 3",
-            price: "$29.99",
+            itemName: "James Bot",
+            price: "$299.99",
             destination: .product3
         ),
         Item(
             image: "Robot-4",
-            itemName: "Product 4",
-            price: "$19.99",
+            itemName: "Robert Bott",
+            price: "$199.99",
             destination: .product4
         ),
         Item(
             image: "Robot-5",
-            itemName: "Product 5",
-            price: "$39.99",
+            itemName: "Robo Cop",
+            price: "$399.99",
             destination: .product5
         ),
         Item(
             image: "Robot-6",
-            itemName: "Product 6",
-            price: "$29.99",
+            itemName: "Bleep Bloop",
+            price: "$299.99",
             destination: .product6
         ),
     ]
