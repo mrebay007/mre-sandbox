@@ -11,7 +11,7 @@ struct ItemRowView: View {
     var image: String
     var itemName: String
     var price: String
-    @State private var scale = 1.0
+    @State private var isDetail: Bool = false
     @Namespace private var animation
     
     var body: some View {
@@ -21,7 +21,7 @@ struct ItemRowView: View {
                 .scaledToFit()
                 .frame(width: 96, height: 96)
                 .clipShape(RoundedRectangle(cornerRadius: 4.0))
-                .matchedGeometryEffect(id: "ImageScaling", in: animation)
+                .matchedGeometryEffect(id: "ImageScaler", in: animation)
             VStack(alignment: .leading) {
                 Text(itemName)
                     .font(Font.system(size: 20.0, weight: .semibold, design: .default))
@@ -31,7 +31,7 @@ struct ItemRowView: View {
                     .padding(.bottom, 4)
                 Button("ADD TO CART") {
                     print("Button pressed!")
-                    // showingCredits.toggle()
+                    isDetail.toggle()
                 }
                 .padding(.horizontal, 13)
                 .padding(.vertical, 8)

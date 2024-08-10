@@ -14,9 +14,9 @@ struct ProductView1: View {
     var body: some View {
         Text("ProductView1")
             .font(.largeTitle)
+        
         Image("Robot-1")
-            .frame(width: .infinity, height: .infinity)
-            .matchedGeometryEffect(id: "ImageScaling", in: animation)
+            .frame(width: 512, height: 512)
     }
 }
 

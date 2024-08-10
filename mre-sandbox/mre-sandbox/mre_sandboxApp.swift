@@ -17,6 +17,8 @@ struct mre_sandboxApp: App {
                 ItemList(itemContent: ItemData.itemContent)
             } detail: {
                 Text("Choose a robot")
+                    .fontWeight(.bold)
+                    .font(.largeTitle)
             }
         }
     }

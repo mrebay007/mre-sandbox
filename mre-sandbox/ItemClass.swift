@@ -1,43 +1,14 @@
 //
-//  ItemData.swift
+//  ItemCllass State.swift
 //  mre-sandbox
 //
-//  Created by Eberhardt Macbook Air on 8/8/24.
+//  Created by Eberhardt Macbook Air on 8/10/24.
 //
 
-import SwiftUI
+import Foundation
 
-// App Navigation
-enum Destination: String, CaseIterable {
-    
-    case product1
-    case product2
-    case product3
-    case product4
-    case product5
-    case product6
-    
-    @ViewBuilder
-    static func view(forSelection selection: Destination) -> some View {
-        switch selection {
-        case .product1:
-            ProductView1()
-        case .product2:
-            ProductView2()
-        case .product3:
-            ProductView3()
-        case .product4:
-            ProductView4()
-        case .product5:
-            ProductView5()
-        case .product6:
-            ExampleFromHWS()
-        }
-    }
-}
-
-struct ItemData {
-    static var itemContent = [
+class ShoppingList: ObservableObject {
+    @Published var itemContent = [
         Item(
             image: "Robot-1",
             itemName: "Mr. Roboto",
@@ -112,3 +83,4 @@ struct ItemData {
         ),
     ]
 }
+

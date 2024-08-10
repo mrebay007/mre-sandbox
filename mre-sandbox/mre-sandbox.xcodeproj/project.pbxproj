@@ -24,6 +24,7 @@
 		990925522C659B4C00BA46D9 /* ProductView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990925512C659B4C00BA46D9 /* ProductView4.swift */; };
 		990925542C659B6D00BA46D9 /* ProductView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990925532C659B6D00BA46D9 /* ProductView5.swift */; };
 		990925562C659B8600BA46D9 /* ProductView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990925552C659B8600BA46D9 /* ProductView6.swift */; };
+		99BAE8482C67EF92001471C9 /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAE8472C67EF92001471C9 /* ItemClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		990925512C659B4C00BA46D9 /* ProductView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView4.swift; sourceTree = "<group>"; };
 		990925532C659B6D00BA46D9 /* ProductView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView5.swift; sourceTree = "<group>"; };
 		990925552C659B8600BA46D9 /* ProductView6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView6.swift; sourceTree = "<group>"; };
+		99BAE8472C67EF92001471C9 /* ItemClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		9909250C2C656E0500BA46D9 = {
 			isa = PBXGroup;
 			children = (
+				99BAE8472C67EF92001471C9 /* ItemClass.swift */,
 				990925172C656E0500BA46D9 /* mre-sandbox */,
 				990925292C656E0700BA46D9 /* mre-sandboxTests */,
 				990925332C656E0700BA46D9 /* mre-sandboxUITests */,
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9909251B2C656E0500BA46D9 /* ItemList.swift in Sources */,
+				99BAE8482C67EF92001471C9 /* ItemClass.swift in Sources */,
 				990925442C657B8B00BA46D9 /* Item.swift in Sources */,
 				990925502C659B2E00BA46D9 /* ProductView3.swift in Sources */,
 				990925482C658F6900BA46D9 /* ExampleFromHWS.swift in Sources */,
