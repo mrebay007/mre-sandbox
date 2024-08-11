@@ -9,14 +9,38 @@ import SwiftUI
 
 struct ProductView1: View {
     
-    @Namespace private var animation
+
     
     var body: some View {
-        Text("ProductView1")
-            .font(.largeTitle)
-        
-        Image("Robot-1")
-            .frame(width: 512, height: 512)
+        ScrollView {
+            VStack {
+                Image("Robot-1")
+                    .frame(width: UIScreen.main.bounds.width)
+                    .scaledToFill()
+                
+                Text("Robot Title")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(.mint)
+                Text("$199.99")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .foregroundColor(.gray)
+                Divider()
+                Button("ADD TO CART") {
+                    print("Button pressed!")
+                }
+                .padding(.horizontal, 26)
+                .padding(.vertical, 14)
+                .fontWeight(.bold)
+                .font(Font.system(size: 14.0, weight: .bold, design: .rounded))
+                .background(Color.mint)
+                .clipShape(Capsule())
+                .foregroundColor(.black)
+            }
+        }
+
+
     }
 }
 

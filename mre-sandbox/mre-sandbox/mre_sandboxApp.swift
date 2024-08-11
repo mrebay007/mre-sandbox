@@ -14,9 +14,9 @@ struct mre_sandboxApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationSplitView {
-                ItemList(itemContent: ItemData.itemContent)
+                ItemList()
             } detail: {
-                Text("Choose a robot")
+                Text("Robots For Sale")
                     .fontWeight(.bold)
                     .font(.largeTitle)
             }

@@ -9,27 +9,39 @@ import SwiftUI
 
 struct ProductView2: View {
     @StateObject var listItems = ShoppingList()
-    // var itemContent: [Item]
     
     var body: some View {
         VStack {
-            Text("Cart View")
-                .font(.largeTitle)
+            Spacer()
+            Spacer()
+            Spacer()
+            Text("Shopping Cart")
+                .fontWeight(.bold)
             List {
                 ForEach(listItems.itemContent, id: \.self) { row in
                     HStack {
-                        Text(row.image)
-                        Text(row.itemName.uppercased())
-                        Text(row.price)
-                            .font(.largeTitle)
-                        RoundedRectangle(cornerRadius: 16)
-                            .foregroundColor(.mint)
-                            // .background(Color.mint)
-                            .clipped()
+                        Image(row.image)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 48, height: 48)
+                            .clipShape(RoundedRectangle(cornerRadius: 2.0))
+                            .padding(.trailing, 6)
+
+                        VStack(alignment: .leading) {
+                            Text(row.itemName.uppercased())
+                                .font(.subheadline)
+                                .fontWeight(.bold)
+                                .foregroundColor(.mint)
+                            Text(row.price)
+                                .font(.footnote)
+                                .foregroundColor(.gray)
+                        }
                     }
+                    .frame(minHeight: 64)
 
                 }
             }
+            .navigationTitle("Cart View")
             
         }
 
@@ -44,9 +56,3 @@ struct ScoreView: View {
         Text("Score: ")
     }
 }
-
-//struct ProductView2_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ProductView2(itemContent: ItemData.itemContent)
-//    }
-//}

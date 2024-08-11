@@ -25,6 +25,7 @@
 		990925542C659B6D00BA46D9 /* ProductView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990925532C659B6D00BA46D9 /* ProductView5.swift */; };
 		990925562C659B8600BA46D9 /* ProductView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990925552C659B8600BA46D9 /* ProductView6.swift */; };
 		99BAE8482C67EF92001471C9 /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAE8472C67EF92001471C9 /* ItemClass.swift */; };
+		99BAE84A2C67FC7D001471C9 /* CartItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAE8492C67FC7D001471C9 /* CartItemRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		990925532C659B6D00BA46D9 /* ProductView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView5.swift; sourceTree = "<group>"; };
 		990925552C659B8600BA46D9 /* ProductView6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView6.swift; sourceTree = "<group>"; };
 		99BAE8472C67EF92001471C9 /* ItemClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemClass.swift; sourceTree = "<group>"; };
+		99BAE8492C67FC7D001471C9 /* CartItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				9909251C2C656E0700BA46D9 /* Assets.xcassets */,
 				9909251E2C656E0700BA46D9 /* mre_sandbox.entitlements */,
 				9909251F2C656E0700BA46D9 /* Preview Content */,
+				99BAE8492C67FC7D001471C9 /* CartItemRow.swift */,
 			);
 			path = "mre-sandbox";
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				990925482C658F6900BA46D9 /* ExampleFromHWS.swift in Sources */,
 				9909254E2C659B0600BA46D9 /* ProductView2.swift in Sources */,
 				990925542C659B6D00BA46D9 /* ProductView5.swift in Sources */,
+				99BAE84A2C67FC7D001471C9 /* CartItemRow.swift in Sources */,
 				990925522C659B4C00BA46D9 /* ProductView4.swift in Sources */,
 				9909254A2C6593BA00BA46D9 /* ItemRow.swift in Sources */,
 				990925462C6584F000BA46D9 /* ItemData.swift in Sources */,
