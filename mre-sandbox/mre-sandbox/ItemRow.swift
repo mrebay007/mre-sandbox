@@ -40,6 +40,7 @@ struct ItemRowView: View {
                 .background(Color.mint)
                 .clipShape(Capsule())
                 .foregroundColor(.black)
+                
             }
             .padding(.leading, 4)
 

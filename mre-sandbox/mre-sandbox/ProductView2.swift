@@ -15,33 +15,8 @@ struct ProductView2: View {
             Spacer()
             Spacer()
             Spacer()
-            Text("Shopping Cart")
+            Text("Parking Lot")
                 .fontWeight(.bold)
-            List {
-                ForEach(listItems.itemContent, id: \.self) { row in
-                    HStack {
-                        Image(row.image)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 48, height: 48)
-                            .clipShape(RoundedRectangle(cornerRadius: 2.0))
-                            .padding(.trailing, 6)
-
-                        VStack(alignment: .leading) {
-                            Text(row.itemName.uppercased())
-                                .font(.subheadline)
-                                .fontWeight(.bold)
-                                .foregroundColor(.mint)
-                            Text(row.price)
-                                .font(.footnote)
-                                .foregroundColor(.gray)
-                        }
-                    }
-                    .frame(minHeight: 64)
-
-                }
-            }
-            .navigationTitle("Cart View")
             
         }
 

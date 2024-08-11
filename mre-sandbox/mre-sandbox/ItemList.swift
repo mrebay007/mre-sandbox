@@ -25,7 +25,7 @@ struct ItemList: View {
             .foregroundColor(.black)
             
             .sheet(isPresented: $showingCredits) {
-                ProductView2()
+                ShoppingCart()
                     .presentationDetents([.medium, .large])
                     .presentationDragIndicator(.automatic)
             }
@@ -59,8 +59,8 @@ struct ItemList: View {
     }
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ItemList(itemContent: ItemData.itemContent)
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ItemList().environmentObject(ShoppingList())
+    }
+}
