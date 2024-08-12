@@ -8,14 +8,43 @@
 import SwiftUI
 
 struct ProductView1: View {
+    @State private var currentIndex: Int = 0
+    @GestureState private var dragOffset: CGFloat = 0
+    private let images: [String] = ["Robot-1", "Robot-2", "Robot-3", "Robot-4", "Robot-5", "Robot-6"]
     
     var body: some View {
         ScrollView {
             VStack {
-                Image("Robot-1")
-                    .frame(width: UIScreen.main.bounds.width)
-                    .scaledToFill()
-                
+                ZStack {
+                    ForEach(0..<images.count, id: \.self) { index in
+                        Image(images[index])
+                            .frame(width: 300, height: 468)
+                            .cornerRadius(24)
+                            .opacity(currentIndex == index ? 1.0 : 0.3)
+                            .scaleEffect(currentIndex == index ? 1.2 : 0.8)
+                            .offset(x: CGFloat(index - currentIndex) * 300 + dragOffset, y: 48)
+                    }
+                    .gesture(
+                        DragGesture()
+                            .onEnded({ value in
+                                let threshold: CGFloat = 50
+                                if value.translation.width > threshold {
+                                    withAnimation {
+                                        currentIndex = max(0, currentIndex - 1)
+                                    }
+                                } else if value.translation.width < threshold {
+                                    withAnimation {
+                                        currentIndex = min(images.count - 1, currentIndex + 1)
+                                    }
+                                }
+                                
+                            })
+                    )
+                }
+                Spacer()
+                Rectangle()
+                    .frame(width: 0, height: 96)
+                    .foregroundColor(.clear)
                 Text("Robot Title")
                     .font(.largeTitle)
                     .fontWeight(.bold)

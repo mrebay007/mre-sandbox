@@ -16,7 +16,6 @@ struct ExampleFromHWS: View {
     }
     
     var body: some View {
-        // Spacer()
 
         VStack {
             HStack {

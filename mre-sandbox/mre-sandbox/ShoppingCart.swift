@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ShoppingCart: View {
     @StateObject var listItems = ShoppingList()
+    @EnvironmentObject var item: ShoppingList
     
     var body: some View {
         VStack {
