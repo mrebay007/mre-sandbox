@@ -23,15 +23,15 @@ enum Destination: String, CaseIterable {
         case .product1:
             ProductView1()
         case .product2:
-            ProductView2()
+            ProductView1()
         case .product3:
-            ProductView3()
+            ProductView1()
         case .product4:
-            ProductView4()
+            ProductView1()
         case .product5:
-            ProductView5()
+            ProductView1()
         case .product6:
-            ExampleFromHWS()
+            ProductView1()
         }
     }
 }

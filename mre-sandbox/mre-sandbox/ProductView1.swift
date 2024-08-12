@@ -45,7 +45,7 @@ struct ProductView1: View {
                 Rectangle()
                     .frame(width: 0, height: 96)
                     .foregroundColor(.clear)
-                Text("Robot Title")
+                Text("Jonny Five")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(.mint)
@@ -66,7 +66,7 @@ struct ProductView1: View {
             Divider()
             HStack {
                 Button("ADD TO CART") {
-                    print("Button pressed!")
+                    print("Added item to cart")
                 }
                 .padding(.horizontal, 28)
                 .padding(.vertical, 16)
@@ -78,12 +78,8 @@ struct ProductView1: View {
                 .frame(width: UIScreen.main.bounds.width, height: 64.0)
             }
             .background(Color.black.opacity(0.7))
-            
-
         }
         .frame(width: 512)
-
-
     }
 }
 

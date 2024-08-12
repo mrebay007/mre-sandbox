@@ -44,18 +44,28 @@ struct ShoppingCart: View {
                 }
             }
             .navigationTitle("Cart View")
-            
-            Button("Checkout") {
-                print("Opening...")
+            Divider()
+            HStack {
+                Text("TOTAL")
+                    .font(.subheadline)
+                    .foregroundStyle(.gray)
+                    
+                Text("$27,999")
+                    .font(.subheadline)
                 
+                Button("Checkout") {
+                    print("Opening...")
+                    
+                }
+                .padding(.horizontal, 32)
+                .padding(.vertical, 14)
+                .fontWeight(.bold)
+                .font(Font.system(size: 14.0, weight: .bold, design: .rounded))
+                .background(Color.white)
+                .clipShape(Capsule())
+                .foregroundColor(.black)
             }
-            .padding(.horizontal, 32)
-            .padding(.vertical, 14)
-            .fontWeight(.bold)
-            .font(Font.system(size: 14.0, weight: .bold, design: .rounded))
-            .background(Color.white)
-            .clipShape(Capsule())
-            .foregroundColor(.black)
+            .frame(alignment: .leading)
         }
 
     }
