@@ -20,6 +20,7 @@
 		9909254C2C659ACA00BA46D9 /* ProductView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9909254B2C659ACA00BA46D9 /* ProductView1.swift */; };
 		99BAE8482C67EF92001471C9 /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAE8472C67EF92001471C9 /* ItemClass.swift */; };
 		99BAE84C2C693853001471C9 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAE84B2C693853001471C9 /* ShoppingCart.swift */; };
+		99BAE84E2C6EA6A6001471C9 /* AudioDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAE84D2C6EA6A6001471C9 /* AudioDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		9909254B2C659ACA00BA46D9 /* ProductView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView1.swift; sourceTree = "<group>"; };
 		99BAE8472C67EF92001471C9 /* ItemClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemClass.swift; sourceTree = "<group>"; };
 		99BAE84B2C693853001471C9 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		99BAE84D2C6EA6A6001471C9 /* AudioDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				990925432C657B8A00BA46D9 /* Item.swift */,
 				990925452C6584F000BA46D9 /* ItemData.swift */,
 				9909254B2C659ACA00BA46D9 /* ProductView1.swift */,
+				99BAE84D2C6EA6A6001471C9 /* AudioDemo.swift */,
 				9909251C2C656E0700BA46D9 /* Assets.xcassets */,
 				9909251E2C656E0700BA46D9 /* mre_sandbox.entitlements */,
 				9909251F2C656E0700BA46D9 /* Preview Content */,
@@ -285,6 +288,7 @@
 				990925462C6584F000BA46D9 /* ItemData.swift in Sources */,
 				990925192C656E0500BA46D9 /* mre_sandboxApp.swift in Sources */,
 				9909254C2C659ACA00BA46D9 /* ProductView1.swift in Sources */,
+				99BAE84E2C6EA6A6001471C9 /* AudioDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

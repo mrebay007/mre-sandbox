@@ -23,7 +23,7 @@ enum Destination: String, CaseIterable {
         case .product1:
             ProductView1()
         case .product2:
-            ProductView1()
+            AudioDemo(value: Double.leastNonzeroMagnitude)
         case .product3:
             ProductView1()
         case .product4:
