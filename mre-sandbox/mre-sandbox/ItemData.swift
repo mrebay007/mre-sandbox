@@ -23,7 +23,7 @@ enum Destination: String, CaseIterable {
         case .product1:
             ProductView1()
         case .product2:
-            AudioDemo(value: Double.leastNonzeroMagnitude)
+            AudioDemo()
         case .product3:
             ProductView1()
         case .product4:
@@ -112,3 +112,4 @@ struct ItemData {
         ),
     ]
 }
+
