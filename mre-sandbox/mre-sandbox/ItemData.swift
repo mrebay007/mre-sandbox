@@ -23,7 +23,7 @@ enum Destination: String, CaseIterable {
         case .product1:
             ProductView1()
         case .product2:
-            AudioDemo()
+            AudioPage()
         case .product3:
             ProductView1()
         case .product4:

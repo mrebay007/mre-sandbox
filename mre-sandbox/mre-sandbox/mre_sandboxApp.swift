@@ -13,12 +13,22 @@ struct mre_sandboxApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationSplitView {
-                ItemList()
-            } detail: {
-                Text("Robots For Sale")
-                    .fontWeight(.bold)
-                    .font(.largeTitle)
+            TabView {
+                NavigationSplitView {
+                    ItemList()
+                } detail: {
+                    Text("Robots For Sale")
+                        .fontWeight(.bold)
+                        .font(.largeTitle)
+                }
+                .tabItem {
+                    Label("Shop", systemImage: "cart")
+                }
+                
+                AudioPage()
+                    .tabItem {
+                        Label("Audio", systemImage: "music.note.list")
+                    }
             }
         }
     }
